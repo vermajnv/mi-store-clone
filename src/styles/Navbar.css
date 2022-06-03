@@ -1,0 +1,65 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax;
+    border-bottom: 1px solid rgb(190, 187, 187);
+    background-color: #fff;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: rgb(109, 107, 107);
+    margin: 1vmax 1.2vmax;
+    font-size: 1vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.nav > .logo {
+    border-radius: 20px;
+    background-color: orangered;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    right: 3 vmax;
+    width: 62px;
+}
+
+.searchBox {
+    position: absolute;
+    left: 81vmax;
+}
+
+.searchBox > input {
+    border: none;
+    border-bottom: 1px solid rgb(138, 136, 136);
+    width:  15vmax;
+    font-size: 1vmax;
+    outline: none;
+    color: rgb(61, 61, 61);
+    position: absolute;
+    top: -0.6vmax;
+}
+
+.searchBox svg {
+    border: none;
+    border-bottom: 1px solid rgb(138, 136, 136);
+    position: absolute;
+    left: 15vmax;
+    bottom: -0.7vmax;
+    fill: rgb(128, 126, 126);
+}
+
+.navLinks:hover{
+    color: orangered;
+}
+
+#logoImage {
+    transition: transform 0.6s;
+    transform: translateX(-70px);
+}
+
+#logoImage:hover {
+    transform: translateX(-20px);
+}

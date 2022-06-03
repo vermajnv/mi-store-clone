@@ -1,0 +1,15 @@
+.offerSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.offerSection  img {
+    padding: 1rem 0.5rem;
+    transition: box-shadow 0.4s;
+}
+
+.offerSection img:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.363);
+}

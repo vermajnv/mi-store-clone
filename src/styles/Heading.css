@@ -1,0 +1,18 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: rgb(72, 73, 73);
+}
+
+.heading div {
+    background-color: rgb(149, 149, 149);
+    height: 1px;
+    width: 24%;
+}
+
+.heading p {
+    margin-top: 1rem;
+}

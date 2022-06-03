@@ -1,15 +1,24 @@
 import './App.css';
-import {Navbar} from './Navbar';
+import PreNavbar from './components/PreNavbar';
+import Navbar from './components/Navbar';
+import Slider from './components/Slider';
+import Offers from './components/Offers';
+import Heading from './components/Heading';
+import StartProducts from './components/StarProducts';
+import data from './data/data.json'; 
+
+import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
     return (
-        <div>
+        <Router>
+            <PreNavbar />
             <Navbar />
-            
-            <div className="test">
-                <label htmlFor="test">Hi There its a label</label>
-            </div>
-        </div>
+            <Slider start={data.banner.start} />
+            <Offers offers={data.offer}/>
+            <Heading txt={'START PRODUCTS'}></Heading>
+            <StartProducts products={data.starProduct}></StartProducts>
+        </Router>
     );
 }
 
