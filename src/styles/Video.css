@@ -1,0 +1,41 @@
+.video {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+}
+
+.video > div {
+    width: 30vw;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vmax;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.video > div > a {
+    margin-left: 7.5vmax;
+    margin-top: 5vmax;
+    padding: 2.5vmax;
+    border-radius: 100%;
+    border: none;
+    background-color: rgba(239, 236, 236, 0.349);
+    transition: all .4s;
+}
+
+.video > div:hover {
+    box-shadow: 5px 5px 15px rgba(35, 35, 35, .363);
+}
+
+.video > div:hover a {
+    padding: 2.5vmax;
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: white;
+}
