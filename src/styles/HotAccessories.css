@@ -1,16 +1,25 @@
-.hotAccessoriesMenu {
+.hotAccessories {
     display: flex;
-    justify-content: center;
+    width: 90vw;
+    margin: auto;
 }
 
-.hotAccessoriesMenu .hotAccessoriesMenuLink {
-    padding: .4vmax 0;
+.hotAccessories > div:first-child > img{
+    cursor: pointer;
+    transition: all .2s;
+    size: 22vw;
+}
+
+.hotAccessories > div:first-child > img:hover{
+    box-shadow: 5px 5px 15px rgba(35, 35, 35, .363);
+}
+.hotAccessories div:first-child {
     margin: 1vmax;
-    text-decoration: none;
 }
-
-.hotAccessoriesMenu .hotAccessoriesMenuLink:hover {
-    text-decoration: none;
-    border-bottom: 1px solid orangered;
-    color: orange;
+.hotAccessories > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotAccessories > div:last-child > img{
+    /* size: ; */
 }

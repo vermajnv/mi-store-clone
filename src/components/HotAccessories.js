@@ -1,14 +1,20 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import HotItemCard from './HotItemCard'
 import '../styles/HotAccessories.css'
-const HotAccessories = () => {
+const HotAccessories = (data) => {
+    console.log(data);
     return (
-        <div className="hotAccessoriesMenu">
-            <Link className="hotAccessoriesMenuLink" to="/music">Music Store</Link>
-            <Link className="hotAccessoriesMenuLink" to="/smartDevices">Smart Devices</Link>
-            <Link className="hotAccessoriesMenuLink" to="/home">Home</Link>
-            <Link className="hotAccessoriesMenuLink" to="/lifestyle">Lifestyle</Link>
-            <Link className="hotAccessoriesMenuLink" to="mobileAccessories">Mobile Accessories</Link>
+        <div className="hotAccessories">
+            <div>
+                <img src={data.cover} alt=""/>
+            </div>
+            <div>
+                {
+                    data.image.map((item, index) => {
+                        return <HotItemCard key={index} image={item.image} imageName={item.name} price={item.price}></HotItemCard>
+                    })
+                }
+            </div>
         </div>
     )
 }

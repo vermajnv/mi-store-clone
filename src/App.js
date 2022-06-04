@@ -5,9 +5,9 @@ import Slider from './components/Slider';
 import Offers from './components/Offers';
 import Heading from './components/Heading';
 import StartProducts from './components/StarProducts';
-import HotAccessoriesMenu from './components/HotAccessories';
+import HotAccessoriesMenu from './components/HotAccessoriesMenu';
+import HotAccessoriesRoute from './components/HotAccessoriesRoute.js';
 import data from './data/data.json'; 
-
 import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
             <StartProducts products={data.starProduct}></StartProducts>
             <Heading txt={'HOT ACCESSORIES'}></Heading>
             <HotAccessoriesMenu></HotAccessoriesMenu>
+            <HotAccessoriesRoute></HotAccessoriesRoute>
         </Router>
     );
 }
