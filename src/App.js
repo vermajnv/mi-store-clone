@@ -6,7 +6,8 @@ import Offers from './components/Offers';
 import Heading from './components/Heading';
 import StartProducts from './components/StarProducts';
 import HotAccessoriesMenu from './components/HotAccessoriesMenu';
-import HotAccessoriesRoute from './components/HotAccessoriesRoute.js';
+import HotAccessoriesRoute from './components/HotAccessoriesRoute';
+import ProductReview from './components/ProductReview';
 import data from './data/data.json'; 
 import {BrowserRouter as Router} from 'react-router-dom';
 
@@ -22,6 +23,8 @@ function App() {
             <Heading txt={'HOT ACCESSORIES'}></Heading>
             <HotAccessoriesMenu></HotAccessoriesMenu>
             <HotAccessoriesRoute></HotAccessoriesRoute>
+            <Heading txt={'PRODUCT REVIEWS'}></Heading>
+            <ProductReview reviews={data.productReviews}></ProductReview>
         </Router>
     );
 }

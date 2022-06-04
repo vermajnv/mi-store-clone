@@ -1,0 +1,44 @@
+.productReview {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 90vw;
+    margin: auto;
+}
+
+.productReview div{
+    margin: 0.5vmax;
+    background-color: white;
+    transition: all .4s;
+    padding-bottom: 1rem;
+}
+
+.productReview div:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(35, 35, 35, .363);
+}
+
+.productReview div p {
+    color : rgb(50, 49, 49);
+    margin: 2vmax 0 0.5vmax 2vmax;
+}
+
+.productReview div a {
+    text-decoration: none;
+    color: rgb(133, 131, 131);
+    margin: 2vmax 0 0.5vmax 2vmax;
+    border-bottom: 1px transparent;
+}
+
+.productReview div a:hover {
+    border-bottom: 1px solid rgb(133, 131, 131);
+}
+
+.productReview div p {
+    color: rgb(133, 131, 131);
+}
+
+.productReview div span {
+    color: orangered;
+    margin: 2vmax 0 0.5vmax 2vmax;
+}

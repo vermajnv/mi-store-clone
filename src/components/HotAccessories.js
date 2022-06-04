@@ -2,7 +2,6 @@ import React from 'react'
 import HotItemCard from './HotItemCard'
 import '../styles/HotAccessories.css'
 const HotAccessories = (data) => {
-    console.log(data);
     return (
         <div className="hotAccessories">
             <div>

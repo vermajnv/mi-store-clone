@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/HotItemCard.css'
 const HotItemCard = (data) => {
-    console.log(data);
     return (
         <div className='hotItemCard'>
             <img src={data.image} alt={`${data.index} product`}/>
