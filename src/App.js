@@ -9,6 +9,7 @@ import HotAccessoriesMenu from './components/HotAccessoriesMenu';
 import HotAccessoriesRoute from './components/HotAccessoriesRoute';
 import ProductReview from './components/ProductReview';
 import Video from './components/Video';
+import Banner from './components/Banner';
 
 import data from './data/data.json'; 
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -29,6 +30,8 @@ function App() {
             <ProductReview reviews={data.productReviews}></ProductReview>
             <Heading txt={'VIDEOS'}></Heading>
             <Video videos={data.videos}></Video>
+            <Heading txt={'IN THE PRESS'}></Heading>
+            <Banner banner={data.banner.end}></Banner>
         </Router>
     );
 }
