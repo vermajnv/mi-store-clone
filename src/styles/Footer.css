@@ -1,0 +1,27 @@
+.preFooter {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.preFooter > div {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.preFooter > div > svg {
+    fill: rgba(35, 35, 36, .363);
+    transition: all .4s;
+}
+
+.preFooter > div > svg:hover {
+    fill: black;
+}
+
+.preFooter > div:hover {
+    cursor: pointer;
+    color: black;
+}

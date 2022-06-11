@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/StarProducts.css'
 function StarProducts(products) {
-    console.log(products.products[0].url);
     return (
         <div className="starProduct">
             <div>

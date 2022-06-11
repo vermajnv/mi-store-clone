@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Navbar.css'
-import {Link} from 'react-router-dom'
 import * as data from '../data/data.json'
 import {search} from '../icons/icons.js'
 
@@ -9,18 +8,18 @@ const Navbar = () => {
     return (
         <div className="nav">
             <div className="logo">
-                <Link to="/asd" className="navLinks">
+                <a href="/" className="navLinks">
                     <img id="logoImage" src={dataMutate.logo} alt="Not Fount"/>
-                </Link>
-            </div>
-                <Link className="navLinks" to="/hi">Mi Phones</Link>
-                <Link className="navLinks" to="/Hello">Redmi Phones</Link>
-                <Link className="navLinks" to="/tv">TV</Link>
-                <Link className="navLinks" to="/laptop">Laptop</Link>
-                <Link className="navLinks" to="/fitness">Fitness & Lifestyle</Link>
-                <Link className="navLinks" to="/home">Home</Link>
-                <Link className="navLinks" to="/radio">Radio</Link>
-                <Link className="navLinks" to="/accessories">Accessories</Link>
+                </a>
+            </div>  
+                <a className="navLinks" href="/miphone">Mi Phones</a>
+                <a className="navLinks" href="/redmiphone">Redmi Phones</a>
+                <a className="navLinks" href="/tv">TV</a>
+                <a className="navLinks" href="/laptop">Laptop</a>
+                <a className="navLinks" href="/fitness">Fitness & Lifestyle</a>
+                <a className="navLinks" href="/home">Home</a>
+                <a className="navLinks" href="/audio">Audio</a>
+                <a className="navLinks" href="/accessories">Accessories</a>
                 <div className="searchBox">
                     <input type="text" name="search" placeholder="Search Products"/>
                     {search}

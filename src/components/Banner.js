@@ -3,12 +3,11 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Banner = (banners) => {
-    console.log(banners);
   return (
     <Carousel fade>
         {
             banners.banner.map((banner, index) => {
-                return <Carousel.Item keyboard={true}>
+                return <Carousel.Item keyboard={true} key={index}>
                     <img
                         className="d-block w-100"
                         src={banner.image}
